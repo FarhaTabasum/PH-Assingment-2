@@ -16,10 +16,11 @@ body{
 }
 nav{
    
-    width:1200px;
+    max-width:1200px;
     margin: 0px auto;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     list-style-type: none;
 }
  
@@ -30,6 +31,10 @@ gap: 32px;
 font-size:1rem;
 align-items: center;
 
+}
+nav>span{
+    margin-left: 100px;
+    display: none;
 }
 
 .logo{
@@ -45,13 +50,39 @@ align-items: center;
 .btn-sub{
     font-size:medium;
     font-style: semi bold;
-    border-radius: 40px;
-    align-items:center;
+    border-radius: 10000px;
+    align-items:left;
+    padding: 2px 5px;
     color: rgb(255, 255, 255,1);
     background: linear-gradient(rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
        
 }
+
+
 nav img{
     align-items: center;
     gap:0px;
+    align-items: end;
+}
+
+
+/*responsive desing*/
+    
+@media screen and (max-width:576px) {
+    nav{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .list-item{
+        display:none;
+        
+    }
+    .btn-sub{
+        display: none;
+    }
+    nav>span{
+    margin-left: 100px;
+    display:inline;
+}
+    
 }
