@@ -64,6 +64,41 @@ nav img{
     gap:0px;
     align-items: end;
 }
+.podcast h1{
+text-align: center;
+font-style: bold;
+font-size: 48px;
+line-height: 60px;
+}
+.podcast p {
+    text-align:  center;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*responsive desing*/
@@ -71,7 +106,7 @@ nav img{
 @media screen and (max-width:576px) {
     nav{
         width: 100%;
-        padding: 0 20px;
+        padding:0 20px;
     }
     .list-item{
         display:none;
