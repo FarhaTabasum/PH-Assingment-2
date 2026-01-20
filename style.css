@@ -148,7 +148,7 @@ display: inline;
 }
 
 [class^="box-"] {
-    border:solid rgba(255, 255, 255, 0.1); 
+    border:solid  rgba(255, 255, 255, 0.1); 
     background-color: #1a0b3c;                  
     border-radius: 12px;
     padding: 25px;
@@ -185,10 +185,80 @@ line-height: 35px;
 }
 
 
+.host {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    background-color:  rgba(26, 11, 46, 1);
+    color: white;
+  
+}
 
 
+.host h2 {
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:xx-large;
+    font-weight: bold;
+}
 
 
+.host-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+.host-name {
+    flex: 1;
+    max-width: 600px;
+    text-align: left; 
+    
+}
+.host-name>h3{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+.host-name p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: white;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.host-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.host-icon img {
+    width: 18px;
+    height: auto;
+}
+
+
+.host-icon:hover {
+    border-color: #ec72ec;
+    transform: translateY(-3px);
+}
 
 
 
@@ -220,6 +290,8 @@ line-height: 35px;
     .grid-container{
         grid-template-columns: repeat(2,2fr);
     }
+    
+    
  
     
     .choose{
@@ -228,4 +300,25 @@ line-height: 35px;
     .grid-container-choose{
         grid-template-columns: repeat(1,1fr);
     }
+    .host {
+        flex-direction: column; 
+        text-align: center;  
+        padding: 30px 15px;    
+    }
+    .host {
+        flex-direction: column; 
+        text-align: center;    
+    }
+    .host-img img {
+        width: 150px;          
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .social-icons {
+        justify-content: center; 
+        padding: 10px 0;
+    }
+    .host-name p {
+        font-size: 14px;       
+}
 }
