@@ -64,6 +64,89 @@ nav img{
     gap:0px;
     align-items: end;
 }
+
+.hero-section{
+    background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top:20px;
+    padding-bottom: 60px;
+}
+.hero-img{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 21em;
+    width: 21em;
+    margin: auto;
+}
+
+.mic{
+    width: 8em;
+    height: 14em;
+    top: 20%;
+    right:26%;
+    position: absolute;
+}
+.hero-circle{
+    position: relative;
+    bottom: 10px;
+    right: 1%;   
+}
+.hero-badge {
+    width: fit-content;      
+    height: auto;          
+    color: rgba(26, 11, 46, 1);
+    background-color: rgba(0, 255, 136, 1);
+    border-radius: 40px;
+    font-weight: 700;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    padding: 4px 12px;      
+    top: 20px;
+    left: 80%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+.hero-btn-1{
+display: flex;
+gap: 5px;
+border-radius: 10000px;
+color: rgb(255, 255, 255,1);
+    background: linear-gradient(rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+
+
+}
+
+.hero-btn-2{
+    border: 1px solid rgba(0, 255, 136, 1);
+    color:rgba(0, 255, 136, 0.5) ;
+    background-color:rgba(26, 11, 46, 1);
+    border-radius: 10000px;
+    width: 100px;
+    
+}
+
+.hero-section h1 {
+    margin-top: 30px;    
+    margin-bottom: 20px;
+}
+
+
+.hero-section p {
+    margin-bottom: 30px; 
+}
+
+
 .podcast h1{
 text-align: center;
 font-style: bold;
@@ -154,10 +237,10 @@ display: inline;
     padding: 25px;
 }
 .Featured{
-text-align: center;
-font-style: bold;
-font-size: 32px;
-line-height: 35px;
+    text-align: center;
+    font-style: bold;
+    font-size: 32px;
+    line-height: 35px;
 }
 .video-grid {
   display: grid;
@@ -340,8 +423,7 @@ line-height: 35px;
     justify-content: center;
     align-items: center;
     gap:10px; 
-    flex-wrap: wrap;
-    margin: 30px 0;
+ 
 }
 
 .footer-links img {
@@ -386,6 +468,53 @@ line-height: 35px;
     margin-left: 100px;
     display:inline;
     }
+
+    .hero-section {
+        margin-bottom: 40px;
+        padding: 0 20px 40px 10px;
+    }
+
+    .hero-img {
+        height: 15em; 
+        width: 15em;
+    }
+    .hero-circle{
+        width: 100%;
+        height: auto;
+        top: 30px;
+        right: 5px;
+    }
+
+    .mic {
+        width: 5em;  
+        height: 9em;
+        left: 70px;
+        top: 70px;
+        
+    }
+
+    .hero-badge {
+        left: 70%;  
+        top: 10px;
+    }
+
+    .podcast h1 {
+        font-size: 32px; 
+        line-height: 40px;
+    }
+
+    .hero-btn {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero-btn-1, .hero-btn-2 {
+        width: 200px; 
+        justify-content: center;
+        padding: 10px;
+    }
+
     .grid-container{
         grid-template-columns: repeat(2,2fr);
     }
@@ -418,18 +547,29 @@ line-height: 35px;
     }
     .host-name p {
         font-size: 14px;       
-}
+    }
     .footer-section {
         
         background-size: contain; 
-        background-position: top center;
+        background-position: 50% 100%;
         padding: 40px 15px;
+  
     }
 
     .footer-links div {
         gap: 15px; 
+        line-height:0%;
+       
     }
+   .footer-section h1 {
+    font-size: 50px;
+    margin-bottom:-0px;
+    line: height 1.2em;
 }
+
+}
+
+
 
 
  
